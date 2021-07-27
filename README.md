@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="https://badges.pufler.dev/created/joseliojunior/URI_Online_Judge">
-  <img src="https://badges.pufler.dev/updated/joseliojunior/URI_Online_Judge">
+  <img src="https://badges.pufler.dev/created/joseliojunior/uri-online-judge">
+  <img src="https://badges.pufler.dev/updated/joseliojunior/uri-online-judge">
 </p>
 
 # Que bom ter você por aqui! 🤩
