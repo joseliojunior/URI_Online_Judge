@@ -4,13 +4,9 @@
 */
 
 const p = require('fs').readFileSync('/dev/stdin', 'utf8'),
-l = p.split('\n'),
-t = l[0];
+    l = p.split('\n');
 
-for (let i = 1; i <= t; i++) {
-    console.log(l[i]
-        .replace(/\s+/g, ' ')
-        .split(' ')
-        .map(x => x[0])
-        .join(''));
+for (let i = 0; i < 10; i++) {
+    const v = +l[i];
+    console.log(`X[${i}] = ${v <= 0 ? 1 : v}`);
 }

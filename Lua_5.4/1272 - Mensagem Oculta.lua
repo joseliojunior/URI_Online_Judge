@@ -1,10 +1,9 @@
---[[
- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
- copyright: Josélio de S. C. Júnior 2021
- submission: #23758420
-]]
-t = tonumber(io.read())
-i = 0
+--- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
+--- copyright: Josélio de S. C. Júnior 2021
+
+local t = tonumber(io.read())
+local i = 0
+
 while i < t do
     local str = string.gsub(io.read(), '%s+', ' ')
 

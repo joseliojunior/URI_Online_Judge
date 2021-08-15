@@ -4,13 +4,9 @@
 */
 
 const p = require('fs').readFileSync('/dev/stdin', 'utf8'),
-l = p.split('\n'),
-t = l[0];
+    l = p.split('\n');
 
-for (let i = 1; i <= t; i++) {
-    console.log(l[i]
-        .replace(/\s+/g, ' ')
-        .split(' ')
-        .map(x => x[0])
-        .join(''));
+for (let i = 0, x = l[0]; i < 10; i++) {
+    console.log(`N[${i}] = ${x}`);
+    x *= 2;
 }
