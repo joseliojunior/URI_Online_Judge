@@ -4,21 +4,17 @@
 */
 
 const p = require('fs').readFileSync('/dev/stdin', 'utf8'),
-l = p.split('\n'),
-op = l.shift(),
-na = [];
-let ay = [], x = 1, y = 11;
+l = p.split('\n');
 
-for (let i = 0; i <= 4; i++) {
-    for(let j = 0; j < 12; j++) {
-        ay.push(+(l.shift()));
-    }
-    na.push(ay.splice(0, 12).slice(x, y));
-    x++; y--;
-}
+const op = l.shift();
+let x = 1, y = 11;
 
-ay = na.flat();
-const v = ay.reduce((a, b) => a + b);
+const sum = Array.from(Array(5), () =>
+    Array.from(Array(12), () => +l.shift()))
+    .map(e => (e = e.slice(x, y), x++, y--, e)
+    ).flat()
+    .reduce((a, b) => a + b);
 
-op === 'M' ? console.log((v / ay.length).toFixed(1))
-: console.log(v.toFixed(1));
+const total = op === 'M' ? sum / 30 : sum;
+
+console.log(total.toFixed(1));
