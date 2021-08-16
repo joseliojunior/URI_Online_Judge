@@ -3,11 +3,10 @@
  * @copyright Josélio de S. C. Júnior 2021
  */
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         Scanner r = new Scanner(System.in);
         int value = Integer.parseInt(r.nextLine());
