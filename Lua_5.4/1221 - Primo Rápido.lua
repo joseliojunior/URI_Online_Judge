@@ -1,3 +1,6 @@
+--- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
+--- copyright: Josélio de S. C. Júnior 2021
+
 local r = io.read()
 
 local function isPrime(n)

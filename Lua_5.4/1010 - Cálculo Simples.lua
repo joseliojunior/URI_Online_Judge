@@ -1,3 +1,6 @@
+--- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
+--- copyright: Josélio de S. C. Júnior 2021
+
 local k = 0
 local rp = {}
 while k < 2 do
