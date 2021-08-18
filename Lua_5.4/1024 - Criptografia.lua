@@ -2,15 +2,16 @@
 --- copyright: Josélio de S. C. Júnior 2021
 
 local a = {}
+
+local function s(x)
+    local t = {}
+    for i in string.gmatch(x, '.') do table.insert(t, i) end
+    return t
+end
+
 for _ = 1, io.read(), 1 do
 
     local input = io.read()
-
-    local function s(x)
-        local t = {}
-        for i in string.gmatch(x, '.') do table.insert(t, i) end
-        return t
-    end
 
     local s1 = ''
     for _, e in ipairs(s(input)) do
@@ -36,4 +37,4 @@ for _ = 1, io.read(), 1 do
     table.insert(a, s3)
 end
 
-for _, e in ipairs(a) do print(e) end
+print(table.concat(a, '\n'))
