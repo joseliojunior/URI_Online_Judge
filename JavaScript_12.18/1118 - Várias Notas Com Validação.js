@@ -7,13 +7,13 @@ const p = require('fs').readFileSync('/dev/stdin', 'utf8');
 const l = p.split('\n');
 
 const arr = [];
-let key = true;
 let status = true;
 
-while (key) {
+while (true) {
     const i = +l.shift();
     if (status) {
-        i >= 0 && i <= 10 ? arr.push(i) : console.log('nota invalida');
+        i >= 0 && i <= 10 ? arr.push(i) 
+            : console.log('nota invalida');
         if (arr.length === 2) {
             console.log(`media = ${(arr.reduce((a, b) => a + b) / 2).toFixed(2)}`);
             arr.length = 0;
@@ -21,6 +21,10 @@ while (key) {
         }
     } else {
         console.log('novo calculo (1-sim 2-nao)');
-        i === 1 ? status = true : i === 2 ? key = false : null;
+        if (i === 1) {
+            status = true;
+        } else if (i === 2) {
+            break;
+        };
     }
 }
