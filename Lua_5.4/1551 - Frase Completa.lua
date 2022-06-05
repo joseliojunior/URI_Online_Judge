@@ -8,7 +8,7 @@ for i = 1, 26 do
 end
 for _ = 1, tonumber(io.read()) do
   local r = io.read()
-  for e in r:gmatch('.') do
+  for e in r:gmatch '.' do
     for i = 1, #t do
       if e == t[i][1] or e == t[i][2] then
         table.insert(k[i], 1)

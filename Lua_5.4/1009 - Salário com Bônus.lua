@@ -2,4 +2,4 @@
 --- copyright: Josélio de S. C. Júnior 2021
 
 io.read()
-print('TOTAL = R$ ' .. string.format('%.2f', io.read() + (0.15 * io.read())))
+print(('TOTAL = R$ %.2f'):format(io.read() + (.15 * io.read())))

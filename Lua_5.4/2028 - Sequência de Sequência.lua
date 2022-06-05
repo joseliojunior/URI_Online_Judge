@@ -1,7 +1,7 @@
 --- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
 --- copyright: Josélio de S. C. Júnior 2022
 
-local r, t, u, i = io.read('n'), {}, {}, 1
+local r, t, u, i = io.read 'n', {}, {}, 1
 while true do
   if not r then break end
   for j = 1, r do table.insert(t, j) end
@@ -15,5 +15,5 @@ while true do
   print(table.concat(u, ' ') .. '\n')
   t, u = {}, {}
   i = i + 1
-  r = io.read('n')
+  r = io.read 'n'
 end

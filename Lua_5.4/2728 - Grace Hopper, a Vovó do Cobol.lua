@@ -5,7 +5,7 @@ local r = io.read()
 while true do
   local k1 = {}
   if not r then break end
-  for e in r:gmatch('(.-)%-') do
+  for e in r:gmatch '(.-)%-' do
     table.insert(k1, e:sub(1,1)..e:sub(-1))
     r = r:gsub('^'..e..'%-', '')
   end

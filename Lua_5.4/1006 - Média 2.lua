@@ -2,4 +2,4 @@
 --- copyright: Josélio de S. C. Júnior 2021
 
 local m = (io.read() * 2 + io.read() * 3 + io.read() * 5) / 10
-print('MEDIA = ' .. string.format('%.1f', m))
+print(('MEDIA = %.1f'):format(m))

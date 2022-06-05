@@ -3,7 +3,7 @@
 
 for _ = 1, tonumber(io.read()) do
   local t = {}
-  for _ = 1, 3 do table.insert(t, io.read('n')) end
+  for _ = 1, 3 do table.insert(t, io.read 'n') end
   local h, d, g = table.unpack(t)
   if (h >= 200 and h <= 300) and d >= 50 and g >= 150 then
     print 'Sim'

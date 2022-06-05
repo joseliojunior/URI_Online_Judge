@@ -7,7 +7,7 @@ for _ = 1, tonumber(io.read()) do
   local st = 0
   for i = 0, tonumber(io.read()) - 1 do
     local str, it = io.read(), 0
-    for e in str:gmatch('.') do
+    for e in str:gmatch '.' do
       it = it + a[e] + i
     end
     for j = 0, #str - 1 do it = it + j end

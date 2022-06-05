@@ -3,10 +3,9 @@
 
 local a = {}
 while true do
-    local vowels = io.read()
-    if #vowels < 1 then break end
-    local text = io.read()
-    local regex = '[^'..vowels..']'
-    table.insert(a, #string.gsub(text, regex, ''))
+  local vowels = io.read()
+  if #vowels < 1 then break end
+  local text = io.read()
+  table.insert(a, #text:gsub('[^' .. vowels .. ']', ''))
 end
 print(table.concat(a, '\n'))

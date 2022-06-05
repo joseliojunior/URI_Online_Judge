@@ -3,8 +3,8 @@
 
 local c, f = {}, {}
 local n = tonumber(io.read())
-for _ = 1, n do table.insert(c, io.read('n')) end
-for _ = 1, n do table.insert(f, io.read('n')) end
+for _ = 1, n do table.insert(c, io.read 'n') end
+for _ = 1, n do table.insert(f, io.read 'n') end
 local function path(p1, p2)
   local k, v = true, 0
   for i = 1, #f do

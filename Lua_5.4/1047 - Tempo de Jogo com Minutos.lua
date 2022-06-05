@@ -1,7 +1,7 @@
 --- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
 --- copyright: Josélio de S. C. Júnior 2022
 
-local ih, im, eh, em = io.read('n'), io.read('n'), io.read('n'), io.read('n')
+local ih, im, eh, em = io.read 'n', io.read 'n', io.read 'n', io.read 'n'
 local function p(h, m) print(('O JOGO DUROU %d HORA(S) E %d MINUTO(S)'):format(h, m)) end
 local every = (ih == eh and im == em) and true
 local tm = (ih * 60 + im) - (eh * 60 + em)

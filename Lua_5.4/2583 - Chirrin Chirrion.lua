@@ -4,7 +4,7 @@
 for _ = 1, tonumber(io.read()) do
   local iv = {}
   for _ = 1, tonumber(io.read()) do
-    local o, c = io.read():match('(.+)%s(.+)')
+    local o, c = io.read():match '(.+)%s(.+)'
     if c == 'chirrin' then table.insert(iv, o)
     elseif c == 'chirrion' then
       for j = 1, #iv do

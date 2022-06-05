@@ -5,7 +5,7 @@ while true do
   local k, r, x = io.read(), io.read(), {}
   if not k then break end
   r = r .. ' !'
-  for e in r:gmatch('(.-)%s') do table.insert(x, e) end
+  for e in r:gmatch '(.-)%s' do table.insert(x, e) end
   for i = 1, #x do x[i] = tonumber(x[i]) end
   local s = 0
   for i = 1, #x do s = s + x[i] end
