@@ -2,11 +2,10 @@
 --- copyright: Josélio de S. C. Júnior 2022
 
 while true do
-  local t, k = {}, true
-  local r = io.read()
-  if r == nil then break end
-  for e in r:gmatch('.') do
-    if e:match('%a') then
+  local t, k, r = {}, true, io.read()
+  if not r then break end
+  for e in r:gmatch '.' do
+    if e:match '%a' then
       if k then
         table.insert(t, e:upper())
         k = false
