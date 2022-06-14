@@ -1,15 +1,16 @@
 --- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
 --- copyright: Josélio de S. C. Júnior 2021
 
-local op, t, x, y, sum = io.read(), {}, 1, 12, 0
+local o, t, x, y = io.read(), {}, 1, 12
 for i = 1, 5, 1 do
   t[i] = {}
   for j = 1, 12, 1 do t[i][j] = io.read 'n' end
   for k = 1, x, 1 do t[i][k] = 0 end
   for k = 12, y, -1 do t[i][k] = 0 end
-  for j = 1, #t[i], 1 do sum = sum + t[i][j] end
-  x = x + 1
-  y = y - 1
+  x, y = x + 1, y - 1
 end
-local total = op == 'M' and sum / 30 or sum
-print(('%.1f'):format(total))
+x = 0
+for i = 1, 5, 1 do
+  for j = 1, #t[i], 1 do x = x + t[i][j] end
+end
+print(('%.1f'):format(o == 'M' and x / 30 or x))
