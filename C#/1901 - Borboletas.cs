@@ -2,6 +2,7 @@
 /// copyright Josélio de S. C. Júnior 2021
 
 using System;
+using System.Linq;
 
 class URI {
   static void Main() {

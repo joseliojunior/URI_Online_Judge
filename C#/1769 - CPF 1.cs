@@ -2,6 +2,8 @@
 /// copyright Josélio de S. C. Júnior 2021
 
 using System;
+using System.Linq;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 class URI {
@@ -28,8 +30,8 @@ class URI {
       c1 = c1 == 10 ? 0 : c1;
       c2 = c2 == 10 ? 0 : c2;
 
-      Console.WriteLine(
-        Int32.Parse(string.Concat(r[(r.Length - 2)..r.Length]))
+      Console.WriteLine(Int32.Parse(
+          string.Concat(r.Skip(r.Length - 2).Take(2)))
           == Int32.Parse($"{c1}{c2}") ? "CPF valido"
           : "CPF invalido"
       );
