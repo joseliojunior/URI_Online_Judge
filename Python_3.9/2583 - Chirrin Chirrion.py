@@ -1,5 +1,5 @@
-# author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
-# copyright: Josélio de S. C. Júnior 2022
+# author: Josélio Júnior <joseliojrx25@gmail.com>
+# copyright: Josélio Júnior 2022
 
 tn = int(input())
 

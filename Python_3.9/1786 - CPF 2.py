@@ -1,8 +1,8 @@
-# author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
-# copyright: Josélio de S. C. Júnior 2022
+# author: Josélio Júnior <joseliojrx25@gmail.com>
+# copyright: Josélio Júnior 2022
 
-def c(l):
-  return sum(l) % 11
+c = lambda l: sum(l) % 11
+
 while True:
   try:
     d1, d2, i, j = [], [], 1, 9
@@ -12,7 +12,7 @@ while True:
     for e in r:
       d1.append(int(e) * i)
       d2.append(int(e) * j)
-      
+
       if i <= 3:
         p1.append(r[x:x + 3])
         x += 3

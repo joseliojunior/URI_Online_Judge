@@ -1,5 +1,5 @@
-# author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
-# copyright: Josélio de S. C. Júnior 2022
+# author: Josélio Júnior <joseliojrx25@gmail.com>
+# copyright: Josélio Júnior 2022
 
 br_code = [
   '.***..', '*.....', '*.*...', '**....', '**.*..',
@@ -18,7 +18,7 @@ while True:
     r = input()
     p = 0
 
-    for i in range(3):
+    for _ in range(3):
       step = []
       for e in r:
         step.append(br_code[int(e)][p:p + 2])
@@ -30,7 +30,7 @@ while True:
   elif cmd == 'B':
     pre_br = []
 
-    for i in range(3):
+    for _ in range(3):
       pre_br.append(input().split(' '))
 
     for i in range(int(sz)):

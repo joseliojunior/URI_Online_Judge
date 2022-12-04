@@ -1,10 +1,9 @@
-# author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
-# copyright: Josélio de S. C. Júnior 2022
+# author: Josélio Júnior <joseliojrx25@gmail.com>
+# copyright: Josélio Júnior 2022
 
 import re
 
-def c(l):
-  return sum(l) % 11
+c = lambda l: sum(l) % 11
 
 while True:
   try:
