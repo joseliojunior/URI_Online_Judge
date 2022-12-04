@@ -1,5 +1,5 @@
---- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
---- copyright: Josélio de S. C. Júnior 2022
+--- author: Josélio Júnior (Lunatic Fox) <joseliojrx25@gmail.com>
+--- copyright: Josélio Júnior (Lunatic Fox) 2022
 
 local a = {}
 for i = 0, 25 do a[string.char(i + 65)] = i end

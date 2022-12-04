@@ -1,4 +1,4 @@
---- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
---- copyright: Josélio de S. C. Júnior 2021
+--- author: Josélio Júnior (Lunatic Fox) <joseliojrx25@gmail.com>
+--- copyright: Josélio Júnior (Lunatic Fox) 2021
 
 print('DIFERENCA = '..(io.read() * io.read()) - (io.read() * io.read()))

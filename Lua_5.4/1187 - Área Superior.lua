@@ -1,5 +1,5 @@
---- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
---- copyright: Josélio de S. C. Júnior 2021
+--- author: Josélio Júnior (Lunatic Fox) <joseliojrx25@gmail.com>
+--- copyright: Josélio Júnior (Lunatic Fox) 2021
 
 local o, t, x, y = io.read(), {}, 1, 12
 for i = 1, 5, 1 do

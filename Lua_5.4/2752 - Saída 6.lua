@@ -1,5 +1,5 @@
---- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
---- copyright: Josélio de S. C. Júnior 2022
+--- author: Josélio Júnior (Lunatic Fox) <joseliojrx25@gmail.com>
+--- copyright: Josélio Júnior (Lunatic Fox) 2022
 
 local u = 'AMO FAZER EXERCICIO NO URI'
 print(('<%s>'):format(u))

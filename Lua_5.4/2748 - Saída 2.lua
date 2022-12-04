@@ -1,5 +1,5 @@
---- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
---- copyright: Josélio de S. C. Júnior 2022
+--- author: Josélio Júnior (Lunatic Fox) <joseliojrx25@gmail.com>
+--- copyright: Josélio Júnior (Lunatic Fox) 2022
 
 local w = { 'Roberto', '5786', 'UNIFEI' }
 local function l(x) return ('|%s%s%s|\n'):format((' '):rep(8), x, (' '):rep(29 - #x)) end

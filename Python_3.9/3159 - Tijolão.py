@@ -1,5 +1,5 @@
-# author: Josélio Júnior <joseliojrx25@gmail.com>
-# copyright: Josélio Júnior 2022
+# author: Josélio Júnior (Lunatic Fox) <joseliojrx25@gmail.com>
+# copyright: Josélio Júnior (Lunatic Fox) 2022
 
 k = [
   'abc', 'def', 'ghi',

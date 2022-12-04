@@ -1,5 +1,5 @@
---- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
---- copyright: Josélio de S. C. Júnior 2022
+--- author: Josélio Júnior (Lunatic Fox) <joseliojrx25@gmail.com>
+--- copyright: Josélio Júnior (Lunatic Fox) 2022
 
 local b, t, u = ('-'):rep(39), {}, { '10,12,A', '11,13,B', '12,14,C', '13,15,D', '14,16,E', '15,17,F' }
 for i = 0, 7 do

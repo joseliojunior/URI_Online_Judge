@@ -1,5 +1,5 @@
---- author: Josélio de S. C. Júnior <joseliojrx25@gmail.com>
---- copyright: Josélio de S. C. Júnior 2022
+--- author: Josélio Júnior (Lunatic Fox) <joseliojrx25@gmail.com>
+--- copyright: Josélio Júnior (Lunatic Fox) 2022
 
 local ih, im, eh, em = io.read 'n', io.read 'n', io.read 'n', io.read 'n'
 local function p(h, m) print(('O JOGO DUROU %d HORA(S) E %d MINUTO(S)'):format(h, m)) end
