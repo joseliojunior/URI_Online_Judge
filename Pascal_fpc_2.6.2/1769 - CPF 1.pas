@@ -2,8 +2,7 @@
 // copyright: Josélio Júnior (Lunatic Fox) 2023
 
 var
-  r: string;
-  s: string;
+  r, s: string;
   na: array[1..11] of integer;
   i, j, tna, b1, b2: integer;
 begin
