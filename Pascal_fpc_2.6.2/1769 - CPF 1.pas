@@ -7,7 +7,7 @@ var
   i, j, tna, b1, b2: integer;
 begin
   while not Eoln do
-    begin
+  begin
     readln(r);
     s := '';
     for i := 1 to 14 do
