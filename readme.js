@@ -29,7 +29,9 @@ langs.forEach(e => {
 
   if (!obj[title]) obj[title] = []
 
-  const exw = ex === 'c-sharp' ? 'C%23' : `${ex[0]?.toUpperCase()}${ex.slice(1)}`
+  const exw = ex === 'c-sharp' ? 'C%23'
+: ex === 'javascript' ? 'JavaScript'
+: `${ex[0]?.toUpperCase()}${ex.slice(1)}`
 
   obj[title].push(`[![](https://gh-tags.vercel.app/api?lang=${ex}&size=small)](https://github.com/lunatic-fox/uri-online-judge/blob/main/${exw}/${encodeURI(e)})`)
 
