@@ -1,0 +1,15 @@
+name: Build readme
+on: push
+jobs:
+  build: 
+    name: Build README file
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: node readme
+      - uses: stefanzweifel/git-auto-commit-action@v4
