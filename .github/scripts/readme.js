@@ -9,6 +9,7 @@ const langs = ['C', 'C#', 'Java', 'JavaScript', 'Kotlin', 'Lua', 'Pascal', 'Pyth
 langs.forEach(e => {
   const title = e.replace(/(.+?)\.[^.]+$/, '$1')
   let ex = e.replace(/.+?\.([^.]+)$/, '$1')
+  const pex = ex
 
   const ext = {
     cs: { img: 'c-sharp', dir: 'C%23' },
@@ -22,10 +23,9 @@ langs.forEach(e => {
 
   if (!obj[title]) obj[title] = []
 
-  const exw = ext[ex]?.dir ? ext[ex].dir : `${ex[0]?.toUpperCase()}${ex.slice(1)}`
-
+  const exw = ext[pex]?.dir ?? `${ex[0]?.toUpperCase()}${ex.slice(1)}`
+  
   obj[title].push(`[![](https://gh-tags.vercel.app/api?lang=${ex}&size=small)](https://github.com/lunatic-fox/uri-online-judge/blob/main/${exw}/${encodeURI(e)})`)
-
 })
 
 fs.writeFileSync('./README.md',
