@@ -10,29 +10,19 @@ langs.forEach(e => {
   const title = e.replace(/(.+?)\.[^.]+$/, '$1')
   let ex = e.replace(/.+?\.([^.]+)$/, '$1')
 
-  switch (ex) {
-    case 'cs':
-      ex = 'c-sharp'
-      break
-    case 'js':
-      ex = 'javascript'
-      break
-    case 'kt':
-      ex = 'kotlin'
-      break
-    case 'pas':
-      ex = 'pascal'
-      break
-    case 'py':
-      ex = 'python'
-      break
+  const ext = {
+    cs: { img: 'c-sharp', dir: 'C%23' },
+    js: { img: 'javascript', dir: 'JavaScript' },
+    kt: { img: 'kotlin' },
+    pas: { img: 'pascal' },
+    py: { img: 'python' },
   }
+
+  ex = ext[ex] ? ext[ex].img : ex
 
   if (!obj[title]) obj[title] = []
 
-  const exw = ex === 'c-sharp' ? 'C%23'
-    : ex === 'javascript' ? 'JavaScript'
-    : `${ex[0]?.toUpperCase()}${ex.slice(1)}`
+  const exw = ext[ex]?.dir ??`${ex[0]?.toUpperCase()}${ex.slice(1)}`
 
   obj[title].push(`[![](https://gh-tags.vercel.app/api?lang=${ex}&size=small)](https://github.com/lunatic-fox/uri-online-judge/blob/main/${exw}/${encodeURI(e)})`)
 
